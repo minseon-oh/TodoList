@@ -1,0 +1,35 @@
+.item {
+  position: relative;
+  padding: 15px 0px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: #f65d80;
+}
+
+.checkbox {
+  position: absolute;
+  width: 5%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.text {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.complete {
+  color: #afafaf;
+  text-decoration-line: line-through;
+}
+
+.btnDelete {
+  position: absolute;
+  width: 10%;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}

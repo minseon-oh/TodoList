@@ -1,0 +1,92 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+  }
+}
+
+.todoInsert {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+
+.title p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  opacity: 1.0;
+  margin: 0px;
+  text-align: left;
+  height: 40px;
+  line-height: 40px;
+}
+
+.tasks {
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 1.0;
+  margin: 0px;
+  text-align: left;
+}
+
+.colorText {
+  color: #f65d80;
+}
+
+.write {
+  width: 100%;
+  height: 40px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.write input {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  width: 90%;
+  height: 100%;
+  border: none;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  outline: none;
+  padding: 0px 10px;
+  float: left;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.write input:focus {
+  border: 1px solid #f65d80;
+}
+
+.btn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  color: #f65d80;
+  font-size: 3rem;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.5s linear;
+}
+
+.rotate {
+  transform: rotate( 45deg );
+}
