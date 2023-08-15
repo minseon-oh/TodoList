@@ -1,4 +1,4 @@
-# React Toto List Web Application
+# React Todo List Web Application
   리액트 + 오늘 할 일 어플리케이션
 
 ## Infomation
