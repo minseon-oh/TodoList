@@ -3,14 +3,9 @@ import './App.css';
 import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
 
-let todoId = 4;
+let todoId = 0;
 function App() {
-  const [todoList, setTodoList] = useState([
-    {id:1, text:"강아지 목욕시키기", checked:true},
-    {id:2, text:"개인프로젝트 작업 2시간", checked:false},
-    {id:3, text:"밀린 집안일", checked:false},
-    {id:4, text:"강아지 산책", checked:true},
-  ]);
+  const [todoList, setTodoList] = useState([]);
 
   const onInsertToggle = (txt) => {
     todoId++;
